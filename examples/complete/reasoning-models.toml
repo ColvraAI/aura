@@ -64,6 +64,8 @@ temperature = 1.0
 # max_tokens must exceed the thinking budget.
 max_tokens = 16_000
 context_window = 200_000
+# Cache the preamble and tool list that every turn re-sends.
+prompt_caching = true
 
 # Sent verbatim as the `thinking` field of the Messages API request.
 [orchestration.worker.deep-analysis.llm.additional_params.thinking]
