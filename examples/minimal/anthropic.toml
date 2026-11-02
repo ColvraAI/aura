@@ -12,4 +12,6 @@ system_prompt = "You are a helpful assistant."
 provider = "anthropic"
 api_key = "{{ env.ANTHROPIC_API_KEY }}"
 model = "claude-sonnet-4-20250514"
+# Cache the system prompt, tools and history that every turn re-sends.
+prompt_caching = true
 
